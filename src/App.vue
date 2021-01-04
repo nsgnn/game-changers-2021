@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav>
+      <div class="nav-wrapper blue-grey">
+        <a class="brand-logo center">{{this.pageName}}</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a onclick="location.reload()"><i class="material-icons">refresh</i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="red">test5</div>
+      <div class="orange">test4</div>
+      <div class="yellow">test3</div>
+      <div class="green">test2</div>
+      <div class="blue">test1</div>
+      <div class="indigo">test0</div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
   components: {
-    HelloWorld
+  },
+  props:{
+    pageName: {
+      type: String,
+      default: "Page Name"
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

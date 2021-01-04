@@ -1,4 +1,4 @@
-# game-changers-21
+# Game Changers 2021 Template Repository
 
 ## Project setup
 ```
@@ -19,6 +19,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
