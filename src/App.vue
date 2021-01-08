@@ -15,7 +15,7 @@
         Phasellus id gravida lacus. Proin ultrices finibus suscipit. Sed vel magna et quam rutrum tristique. Sed maximus iaculis nisl sit amet dignissim. In commodo pharetra sapien, id fringilla ex commodo eget. Vivamus aliquam augue sed fringilla dignissim. Nam at justo gravida, suscipit dui eu, vestibulum sem. Curabitur hendrerit mi nisl, tristique lacinia lectus laoreet nec. Sed tincidunt auctor dolor eu porta. Fusce ullamcorper a odio consequat pretium. Morbi nec arcu eu orci facilisis faucibus. Vivamus nec quam eros. Vivamus suscipit elementum elit et vestibulum. Aliquam eget mauris facilisis libero vestibulum tincidunt. Cras tincidunt nisl imperdiet urna tempus congue. Nulla ultricies erat lectus, vel malesuada odio tempus vel.
       </TextEntry>
       <Blank slot="3" class="pink accent-1"/>
-      <Picture slot="4" image-source="https://cdn.mos.cms.futurecdn.net/M7fDTpDnJcZ4dt3myngzxi-1200-80.jpg"/>
+      <Picture slot="6" image-source="https://cdn.mos.cms.futurecdn.net/M7fDTpDnJcZ4dt3myngzxi-1200-80.jpg"/>
       <TableWrapper slot="5" :table-data="{
                                             'headers':
                                               ['col1','col2','col3','col4'],
@@ -36,7 +36,7 @@
                                               ['1','2','3','4'],
                                               ['5','6','7','8']]
       }"/>
-      <BarGraph slot="6" :chart-data="[
+      <BarGraph slot="4" :chart-data="[
                 ['Year', 'Sales', 'Expenses', 'Profit'],
                 ['2014', 1000, 400, 200],
                 ['2015', 1170, 460, 250],
