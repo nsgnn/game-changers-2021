@@ -14,7 +14,7 @@
       <div slot="3" class="yellow">test3</div>
       <Picture slot="4" image-source="https://media.tenor.com/images/1bc54d8e78d4e1ea0171bfdd5174c7be/tenor.gif"/>
       <div slot="5" class="green">test1</div>
-      <Graph slot="6" :axisMin="0" :axisMax="100"/>
+      <BarGraph slot="6" :axisMin="0" :axisMax="100"/>
     </layout>
   </div>
 </template>
@@ -22,14 +22,14 @@
 <script>
   import Layout from "@/Layout";
   import Picture from "@/components/Picture";
-  import Graph from "@/components/Graph";
+  import BarGraph from "@/components/BarGraph";
 
   export default {
   name: 'App',
   components: {
     Layout,
     Picture,
-    Graph
+    BarGraph
   },
   props:{
     pageName: {

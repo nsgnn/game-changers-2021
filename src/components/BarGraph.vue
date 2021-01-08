@@ -8,7 +8,7 @@
 <script>
     import { GChart } from 'vue-google-charts'
     export default {
-        name: "Graph",
+        name: "BarGraph",
         components: {
             GChart
         },
