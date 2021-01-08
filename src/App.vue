@@ -14,7 +14,13 @@
       <div slot="3" class="yellow">test3</div>
       <Picture slot="4" image-source="https://media.tenor.com/images/1bc54d8e78d4e1ea0171bfdd5174c7be/tenor.gif"/>
       <div slot="5" class="green">test1</div>
-      <BarGraph slot="6" :axisMin="0" :axisMax="100"/>
+      <BarGraph slot="6" :chart-data="[
+                ['Year', 'Sales', 'Expenses', 'Profit'],
+                ['2014', 1000, 400, 200],
+                ['2015', 1170, 460, 250],
+                ['2016', 660, 1120, 300],
+                ['2017', 125, 540, 350],
+            ]"/>
     </layout>
   </div>
 </template>
@@ -42,6 +48,7 @@
 
 <style>
 
-
-
+#app{
+  overflow: hidden;
+}
 </style>
