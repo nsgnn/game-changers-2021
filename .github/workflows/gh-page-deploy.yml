@@ -1,0 +1,24 @@
+# This workflow will build and push a node.js application to a Github Page
+on:
+  push:
+    branches: 
+     - main
+
+env:
+  NODE_VERSION: '10.x'                # set this to the node version to use
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run deploy
+ 
