@@ -45,8 +45,9 @@
         width: 100vw;
     }
 
-    .layout div{
-        height: 100%;
+    .layout>div{
+        height: 45vh;
+        overflow-y: auto;
         width: 100%;
         align-content: center;
         justify-content: center;

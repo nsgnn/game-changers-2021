@@ -14,7 +14,6 @@
             GChart
         },
         props: {
-            // Array will be automatically processed with visualization.arrayToDataTable function
             chartData: Array,
         },
     }
@@ -22,7 +21,6 @@
 
 <style>
 .graph{
-    height: 100%;
-    width: 100%;
+    overflow: hidden !important;
 }
 </style>

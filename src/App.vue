@@ -9,11 +9,33 @@
       </div>
     </nav>
     <layout :grid-size="3">
-      <Picture slot="1" image-source="https://i.pinimg.com/originals/54/cf/b7/54cfb760a96b8139cd8b6134acc73050.gif"/>
-      <div slot="2" class="orange">test4</div>
+      <Picture slot="1" image-source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOvc_dOBSb6OMltOhGtqUJ0FE1thmRVJf56g&usqp=CAU" image-height="225"/>
+      <TextEntry slot="2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate faucibus nibh eget pulvinar. Fusce faucibus turpis ut molestie vestibulum. Sed et fringilla massa. Etiam nec sem rutrum, fermentum lectus quis, consectetur eros. Proin quis fringilla odio. Ut in velit a nunc mollis sodales. Sed vitae accumsan ligula. Etiam ac tincidunt nulla, nec mattis urna. Suspendisse nec cursus magna, luctus vestibulum ex. Donec luctus tellus vel dui lacinia, non dictum nulla dictum. Aliquam faucibus ligula id orci posuere malesuada. Ut nec est in leo pellentesque dapibus. Phasellus ipsum velit, posuere quis ex ut, laoreet ullamcorper mauris. Donec in viverra dui.
+        Phasellus id gravidLorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate faucibus nibh eget pulvinar. Fusce faucibus turpis ut molestie vestibulum. Sed et fringilla massa. Etiam nec sem rutrum, fermentum lectus quis, consectetur eros. Proin quis fringilla odio. Ut in velit a nunc mollis sodales. Sed vitae accumsan ligula. Etiam ac tincidunt nulla, nec mattis urna. Suspendisse nec cursus magna, luctus vestibulum ex. Donec luctus tellus vel dui lacinia, non dictum nulla dictum. Aliquam faucibus ligula id orci posuere malesuada. Ut nec est in leo pellentesque dapibus. Phasellus ipsum velit, posuere quis ex ut, laoreet ullamcorper mauris. Donec in viverra dui.
+        Phasellus id gravida lacus. Proin ultrices finibus suscipit. Sed vel magna et quam rutrum tristique. Sed maximus iaculis nisl sit amet dignissim. In commodo pharetra sapien, id fringilla ex commodo eget. Vivamus aliquam augue sed fringilla dignissim. Nam at justo gravida, suscipit dui eu, vestibulum sem. Curabitur hendrerit mi nisl, tristique lacinia lectus laoreet nec. Sed tincidunt auctor dolor eu porta. Fusce ullamcorper a odio consequat pretium. Morbi nec arcu eu orci facilisis faucibus. Vivamus nec quam eros. Vivamus suscipit elementum elit et vestibulum. Aliquam eget mauris facilisis libero vestibulum tincidunt. Cras tincidunt nisl imperdiet urna tempus congue. Nulla ultricies erat lectus, vel malesuada odio tempus vel.
+      </TextEntry>
       <div slot="3" class="yellow">test3</div>
-      <Picture slot="4" image-source="https://media.tenor.com/images/1bc54d8e78d4e1ea0171bfdd5174c7be/tenor.gif"/>
-      <div slot="5" class="green">test1</div>
+      <Picture slot="4" image-source="https://cdn.mos.cms.futurecdn.net/M7fDTpDnJcZ4dt3myngzxi-1200-80.jpg"/>
+      <TableWrapper slot="5" :table-data="{
+                                            'headers':
+                                              ['col1','col2','col3','col4'],
+                                            'data':
+                                              [['1','2','3','4'],
+                                              ['5','6','7','8'],
+                                              ['1','2','3','4'],
+                                              ['5','6','7','8'],
+                                              ['1','2','3','4'],
+                                              ['5','6','7','8'],
+                                              ['5','6','7','8'],
+                                              ['1','2','3','4'],
+                                              ['5','6','7','8'],
+                                              ['1','2','3','4'],
+                                              ['5','6','7','8'],
+                                              ['1','2','3','4'],
+                                              ['5','6','7','8'],
+                                              ['1','2','3','4'],
+                                              ['5','6','7','8']]
+      }"/>
       <BarGraph slot="6" :chart-data="[
                 ['Year', 'Sales', 'Expenses', 'Profit'],
                 ['2014', 1000, 400, 200],
@@ -29,10 +51,14 @@
   import Layout from "@/Layout";
   import Picture from "@/components/Picture";
   import BarGraph from "@/components/BarGraph";
+  import TableWrapper from "@/components/TableWrapper";
+  import TextEntry from "@/components/TextEntry";
 
   export default {
   name: 'App',
   components: {
+    TextEntry,
+    TableWrapper,
     Layout,
     Picture,
     BarGraph
@@ -47,8 +73,7 @@
 </script>
 
 <style>
-
-#app{
-  overflow: hidden;
-}
+  #app{
+    overflow-x: hidden;
+  }
 </style>
