@@ -1,29 +1,31 @@
 <template>
-    <graph-bar
-            :width="600"
-            :height="400"
-            :axis-min="0"
-            :axis-max="50"
-            :labels="[ '1Q', '2Q', '3Q', '4Q' ]"
-            :values="this.seriesData.values">
-        <note :text="'Bar Chart'"></note>
-        <tooltip :names="this.seriesData.names" :position="'left'"></tooltip>
-        <legends :names="this.seriesData.names" :filter="true"></legends>
-    </graph-bar>
+    <GChart
+            type="ColumnChart"
+            :data="chartData"
+    />
 </template>
 
 <script>
+    import { GChart } from 'vue-google-charts'
     export default {
         name: "Graph",
+        components: {
+            GChart
+        },
         prop: {
-            seriesData: {
-                names: [ "MS", "Apple", "Google" ],
-                values: [
-                    [ 10, 5, 5, 5 ],
-                    [ 40, 10, 10, 10 ],
-                    [ 30, 30, 30, 30 ]
-                ]
-            },
+
+        },
+        data: function() {
+            return {
+                // Array will be automatically processed with visualization.arrayToDataTable function
+                chartData: [
+                    ['Year', 'Sales', 'Expenses', 'Profit'],
+                    ['2014', 1000, 400, 200],
+                    ['2015', 1170, 460, 250],
+                    ['2016', 660, 1120, 300],
+                    ['2017', 1030, 540, 350]
+                ],
+            }
         }
     }
 </script>
