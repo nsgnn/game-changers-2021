@@ -10,7 +10,7 @@
 </template>
 <script>
     export default {
-        name: 'layout',
+        name: 'DefaultLayout',
         props: {
             gridSize:{
                 type: Number,

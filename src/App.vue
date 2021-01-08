@@ -8,7 +8,7 @@
         </ul>
       </div>
     </nav>
-    <layout :grid-size="3">
+    <DefaultLayout :grid-size="3">
       <Picture slot="1" image-source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOvc_dOBSb6OMltOhGtqUJ0FE1thmRVJf56g&usqp=CAU" image-height="225"/>
       <TextEntry slot="2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate faucibus nibh eget pulvinar. Fusce faucibus turpis ut molestie vestibulum. Sed et fringilla massa. Etiam nec sem rutrum, fermentum lectus quis, consectetur eros. Proin quis fringilla odio. Ut in velit a nunc mollis sodales. Sed vitae accumsan ligula. Etiam ac tincidunt nulla, nec mattis urna. Suspendisse nec cursus magna, luctus vestibulum ex. Donec luctus tellus vel dui lacinia, non dictum nulla dictum. Aliquam faucibus ligula id orci posuere malesuada. Ut nec est in leo pellentesque dapibus. Phasellus ipsum velit, posuere quis ex ut, laoreet ullamcorper mauris. Donec in viverra dui.
         Phasellus id gravidLorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate faucibus nibh eget pulvinar. Fusce faucibus turpis ut molestie vestibulum. Sed et fringilla massa. Etiam nec sem rutrum, fermentum lectus quis, consectetur eros. Proin quis fringilla odio. Ut in velit a nunc mollis sodales. Sed vitae accumsan ligula. Etiam ac tincidunt nulla, nec mattis urna. Suspendisse nec cursus magna, luctus vestibulum ex. Donec luctus tellus vel dui lacinia, non dictum nulla dictum. Aliquam faucibus ligula id orci posuere malesuada. Ut nec est in leo pellentesque dapibus. Phasellus ipsum velit, posuere quis ex ut, laoreet ullamcorper mauris. Donec in viverra dui.
@@ -43,12 +43,12 @@
                 ['2016', 660, 1120, 300],
                 ['2017', 125, 540, 350],
             ]"/>
-    </layout>
+    </DefaultLayout>
   </div>
 </template>
 
 <script>
-  import Layout from "@/Layout";
+  import DefaultLayout from "@/DefaultLayout";
   import Picture from "@/components/Picture";
   import BarGraph from "@/components/BarGraph";
   import TableWrapper from "@/components/TableWrapper";
@@ -60,7 +60,7 @@
   components: {
     TextEntry,
     TableWrapper,
-    Layout,
+    DefaultLayout,
     Picture,
     BarGraph,
     Blank
