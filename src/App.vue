@@ -4,7 +4,7 @@
       <div class="nav-wrapper blue">
         <a class="brand-logo center no-select">{{ this.pageName }}</a>
         <ul class="right hide-on-med-and-down">
-          <li><a onclick="location.reload()"><i class="material-icons no-select">refresh</i></a></li>
+          <li class="waves-effect waves-light"><a onclick="location.reload()"><i class="material-icons no-select">refresh</i></a></li>
         </ul>
       </div>
     </nav>
