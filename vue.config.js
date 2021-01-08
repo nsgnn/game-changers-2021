@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/game-changers-21/'
+    publicPath: '/game-changers-2021/'
 }
