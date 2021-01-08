@@ -3,6 +3,9 @@ const execa = require("execa");
 const fs = require("fs");
 (async () => {
     try {
+        await execa("git", ["config", "--global", "user.email", "nategg@pm.me"]);
+        await execa("git", ["config", "--global", "user.name", "Nathan Gazey"]);
+
         await execa("git", ["checkout", "--orphan", "gh-pages"]);
         // eslint-disable-next-line no-console
         console.log("Building started...");
