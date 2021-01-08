@@ -14,7 +14,7 @@
         Phasellus id gravidLorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate faucibus nibh eget pulvinar. Fusce faucibus turpis ut molestie vestibulum. Sed et fringilla massa. Etiam nec sem rutrum, fermentum lectus quis, consectetur eros. Proin quis fringilla odio. Ut in velit a nunc mollis sodales. Sed vitae accumsan ligula. Etiam ac tincidunt nulla, nec mattis urna. Suspendisse nec cursus magna, luctus vestibulum ex. Donec luctus tellus vel dui lacinia, non dictum nulla dictum. Aliquam faucibus ligula id orci posuere malesuada. Ut nec est in leo pellentesque dapibus. Phasellus ipsum velit, posuere quis ex ut, laoreet ullamcorper mauris. Donec in viverra dui.
         Phasellus id gravida lacus. Proin ultrices finibus suscipit. Sed vel magna et quam rutrum tristique. Sed maximus iaculis nisl sit amet dignissim. In commodo pharetra sapien, id fringilla ex commodo eget. Vivamus aliquam augue sed fringilla dignissim. Nam at justo gravida, suscipit dui eu, vestibulum sem. Curabitur hendrerit mi nisl, tristique lacinia lectus laoreet nec. Sed tincidunt auctor dolor eu porta. Fusce ullamcorper a odio consequat pretium. Morbi nec arcu eu orci facilisis faucibus. Vivamus nec quam eros. Vivamus suscipit elementum elit et vestibulum. Aliquam eget mauris facilisis libero vestibulum tincidunt. Cras tincidunt nisl imperdiet urna tempus congue. Nulla ultricies erat lectus, vel malesuada odio tempus vel.
       </TextEntry>
-      <div slot="3" class="yellow">test3</div>
+      <Blank slot="3" class="pink accent-1"/>
       <Picture slot="4" image-source="https://cdn.mos.cms.futurecdn.net/M7fDTpDnJcZ4dt3myngzxi-1200-80.jpg"/>
       <TableWrapper slot="5" :table-data="{
                                             'headers':
@@ -53,6 +53,7 @@
   import BarGraph from "@/components/BarGraph";
   import TableWrapper from "@/components/TableWrapper";
   import TextEntry from "@/components/TextEntry";
+  import Blank from "@/components/Blank";
 
   export default {
   name: 'App',
@@ -61,7 +62,8 @@
     TableWrapper,
     Layout,
     Picture,
-    BarGraph
+    BarGraph,
+    Blank
   },
   props:{
     pageName: {
