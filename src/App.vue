@@ -48,12 +48,12 @@
 </template>
 
 <script>
-  import DefaultLayout from "@/DefaultLayout";
-  import Picture from "@/components/Picture";
-  import BarGraph from "@/components/BarGraph";
-  import TableWrapper from "@/components/TableWrapper";
-  import TextEntry from "@/components/TextEntry";
-  import Blank from "@/components/Blank";
+  import DefaultLayout from "@/view/page/DefaultLayout";
+  import Picture from "@/view/components/Picture";
+  import BarGraph from "@/view/components/BarGraph";
+  import TableWrapper from "@/view/components/TableWrapper";
+  import TextEntry from "@/view/components/TextEntry";
+  import Blank from "@/view/components/Blank";
 
   export default {
   name: 'App',
