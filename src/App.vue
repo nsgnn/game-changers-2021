@@ -9,7 +9,7 @@
       </div>
     </nav>
     <DefaultLayout :grid-size="2">
-      <Picture slot="1" :image-source="this.currentDogInfo['url']!=null? this.currentDogInfo['url'] : ''" description=""/>
+      <Picture slot="1" :image-source="this.dogPicURL" description=""/>
       <TextEntry slot="2"> {{this.dogDescription}}</TextEntry>
 
     </DefaultLayout>
@@ -63,6 +63,9 @@ export default {
   computed:{
     dogDescription: function() {
       return `The dog shown is a ${this.currentDogInfo.breeds[0].name}. People love these dogs, because they are ${this.currentDogInfo.breeds[0].temperament.toLowerCase()}. They usually live ${this.currentDogInfo.breeds[0].life_span} years.`;
+    },
+    dogPicURL: function (){
+      return this.currentDogInfo['url']!=null? this.currentDogInfo['url'] : ''
     }
   }
 }
